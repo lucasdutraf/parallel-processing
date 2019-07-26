@@ -13,5 +13,8 @@ scientists = (
     Scientists(name='Emmy Noether', field='math', born=1882, nobel=False),
 )
 
+fs = tuple(filter(lambda x: x.nobel is True, scientists))
+
+next(fs)
 
 pprint(scientists)
